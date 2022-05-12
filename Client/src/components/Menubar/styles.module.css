@@ -1,261 +1,258 @@
 .menu__list {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 @media only screen and (min-width: 600px) {
-    .menu {
-        display: flex;
-        position: fixed;
-        height: 100%;
-        width: 30%;
-        background-color: black;
-        justify-content: right;
-    }
+	.menu {
+		display: flex;
+		position: fixed;
+		height: 100%;
+		width: 30%;
+		justify-content: right;
+	}
 
-    .menu__nav {
-        display: flex;
-        flex-direction: column;
-        padding-top: 1rem;
-        height: 100%;
-        width: 70%;
-    }
+	.menu__nav {
+		display: flex;
+		flex-direction: column;
+		padding-top: 1rem;
+		height: 100%;
+		width: 70%;
+	}
 
-    .menu__item {
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
+	.menu__item {
+		display: flex;
+		margin: 0;
+		padding: 0;
+	}
 
-    .menu__item>a {
-        display: flex;
-        padding: 1rem;
-        text-decoration: none;
-        align-items: center;
-    }
+	.menu__item > a {
+		display: flex;
+		padding: 1rem;
+		text-decoration: none;
+		align-items: center;
+	}
 
-    .menu__item>a:hover {
-        background-color: #272a2e;
-        border-radius: 2rem;
-    }
+	.menu__item > a:hover {
+		background-color: #272a2e;
+		border-radius: 2rem;
+	}
 
-    .menu__label {
-        margin-left: 1rem;
-        font-size: 20px;
-        color: white;
-    }
+	.menu__label {
+		margin-left: 1rem;
+		font-size: 20px;
+		color: white;
+	}
 
-    .menu__actions {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        justify-content: space-between;
-        max-width: 75%;
-    }
+	.menu__actions {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		justify-content: space-between;
+		max-width: 75%;
+	}
 
-    .menu__chirp {
-        border-radius: 2rem;
-        padding: 1rem 0 1rem 0;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        width: 100%;
-        align-self: center;
-    }
+	.menu__chirp {
+		border-radius: 2rem;
+		padding: 1rem 0 1rem 0;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		width: 100%;
+		align-self: center;
+	}
 
-    .menu__chirp-resize {
-        display: none;
-    }
+	.menu__chirp-resize {
+		display: none;
+	}
 
-    .menu__logout {
-        display: flex;
-        align-items: center;
-        height: 4rem;
-        max-width: 100%;
-        border-radius: 10rem;
-        text-decoration: none;
-        border: none;
-        background-color: transparent;
-        margin: 0 0 2rem 0 !important;
-        padding: .5rem 0 .5rem 0 !important;
-        overflow: hidden;
-    }
+	.menu__logout {
+		display: flex;
+		align-items: center;
+		height: 4rem;
+		max-width: 100%;
+		border-radius: 10rem;
+		text-decoration: none;
+		border: none;
+		background-color: transparent;
+		margin: 0 0 2rem 0 !important;
+		padding: 0.5rem 0 0.5rem 0 !important;
+		overflow: hidden;
+	}
 
-    .menu__logout:hover {
-        background-color: #272a2e;
-    }
+	.menu__logout:hover {
+		background-color: #272a2e;
+	}
 
-    .menu__logout:hover>span {
-        display: none;
-    }
+	.menu__logout:hover > span {
+		display: none;
+	}
 
-    .menu__logout:hover:after {
-        margin-left: 1rem;
-        content: 'Logout';
-        color: red;
-        font-size: large;
-    }
+	.menu__logout:hover:after {
+		margin-left: 1rem;
+		content: "Logout";
+		color: red;
+		font-size: large;
+	}
 
-    .menu__icon {
-        height: 100%;
-        border-radius: 10rem;
-        margin-left: .5rem;
-        max-width: 55px;
-        min-width: 55px;
-        max-height: 55px;
-        min-height: 55px;
-    }
+	.menu__icon {
+		height: 100%;
+		border-radius: 10rem;
+		margin-left: 0.5rem;
+		max-width: 55px;
+		min-width: 55px;
+		max-height: 55px;
+		min-height: 55px;
+	}
 
-    .menu__user {
-        display: flex;
-        font-size: 1rem;
-        font-weight: bold;
-        align-self: center;
-        padding: 0;
-        color: white;
-        margin-left: 1rem;
-    }
+	.menu__user {
+		display: flex;
+		font-size: 1rem;
+		font-weight: bold;
+		align-self: center;
+		padding: 0;
+		color: white;
+		margin-left: 1rem;
+	}
 }
 
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+	.menu {
+		position: fixed;
+		width: 40px;
+		margin-left: 5px;
+		height: 90%;
+	}
 
+	.menu__nav {
+		height: inherit;
+	}
 
-@media only screen and (max-width: 600px) and (orientation:portrait) {
-    .menu {
-        position: fixed;
-        width: 40px;
-        margin-left: 5px;
-        height: 90%;
-    }
+	.menu__label {
+		display: none;
+	}
 
-    .menu__nav {
-        height: inherit;
-    }
+	.menu__item {
+		display: flex;
+		margin: 0;
+		padding: 0.5rem;
+		border-radius: 2rem;
+		text-decoration: none;
+		margin-top: 1rem;
+	}
 
-    .menu__label {
-        display: none;
-    }
+	.menu__item:hover {
+		background-color: #272a2e;
+	}
 
-    .menu__item {
-        display: flex;
-        margin: 0;
-        padding: .5rem;
-        border-radius: 2rem;
-        text-decoration: none;
-        margin-top: 1rem;
-    }
+	.menu__actions {
+		display: flex;
+		flex-direction: column;
+		min-height: 25%;
+		justify-content: space-between;
+	}
 
-    .menu__item:hover {
-        background-color: #272a2e;
-    }
+	.menu__actions > button {
+		margin-top: 1rem;
+		border-radius: 3rem;
+		height: 40px;
+	}
 
-    .menu__actions {
-        display: flex;
-        flex-direction: column;
-        min-height: 25%;
-        justify-content: space-between;
-    }
+	.menu__chirp > span {
+		display: none;
+	}
 
-    .menu__actions>button {
-        margin-top: 1rem;
-        border-radius: 3rem;
-        height: 40px;
-    }
+	.menu__icon {
+		max-width: 100%;
+		border-radius: inherit;
+	}
 
-    .menu__chirp>span {
-        display: none;
-    }
+	.menu__logout {
+		border: none;
+		background: none;
+		padding: 0;
+	}
 
-    .menu__icon {
-        max-width: 100%;
-        border-radius: inherit;
-    }
-
-    .menu__logout {
-        border: none;
-        background: none;
-        padding: 0;
-    }
-
-    .menu__logout>span {
-        display: none;
-    }
+	.menu__logout > span {
+		display: none;
+	}
 }
 
 @media only screen and (max-height: 575.98px) and (orientation: landscape) {
-    .menu {
-        position: fixed;
-        width: 40px;
-        margin-left: 5px;
-        height: 100%;
-    }
+	.menu {
+		position: fixed;
+		width: 40px;
+		margin-left: 5px;
+		height: 100%;
+	}
 
-    .menu__nav {
-        width: inherit;
-        height: inherit;
-        overflow: scroll;
-    }
+	.menu__nav {
+		width: inherit;
+		height: inherit;
+		overflow: scroll;
+	}
 
-    .menu__label {
-        display: none;
-    }
+	.menu__label {
+		display: none;
+	}
 
-    .menu__item {
-        display: flex;
-        margin: 0;
-        padding: .5rem;
-        border-radius: 2rem;
-        text-decoration: none;
-        margin-top: 1rem;
-    }
+	.menu__item {
+		display: flex;
+		margin: 0;
+		padding: 0.5rem;
+		border-radius: 2rem;
+		text-decoration: none;
+		margin-top: 1rem;
+	}
 
-    .menu__item > a {
-        padding: 0;
-    }
+	.menu__item > a {
+		padding: 0;
+	}
 
-    .menu__item:hover {
-        background-color: #272a2e;
-    }
+	.menu__item:hover {
+		background-color: #272a2e;
+	}
 
-    .menu__actions {
-        display: flex;
-        flex-direction: column;
-        min-height: 50%;
-        max-width: 100%;
-        justify-content: space-between;
-    }
+	.menu__actions {
+		display: flex;
+		flex-direction: column;
+		min-height: 50%;
+		max-width: 100%;
+		justify-content: space-between;
+	}
 
-    .menu__actions>button {
-        margin-top: 1rem;
-        border-radius: 3rem;
-        height: 40px;
-    }
+	.menu__actions > button {
+		margin-top: 1rem;
+		border-radius: 3rem;
+		height: 40px;
+	}
 
-    .menu__chirp {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+	.menu__chirp {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-    .menu__chirp>span {
-        display: none;
-    }
+	.menu__chirp > span {
+		display: none;
+	}
 
-    .menu__icon {
-        border-radius: inherit;
-        margin: 0;
-        max-width: 40px;
-    }
+	.menu__icon {
+		border-radius: inherit;
+		margin: 0;
+		max-width: 40px;
+	}
 
-    .menu__logout {
-        border: none;
-        background: none;
-        padding: 0;
-        justify-content: center;
-    }
+	.menu__logout {
+		border: none;
+		background: none;
+		padding: 0;
+		justify-content: center;
+	}
 
-    .menu__logout>span {
-        display: none;
-    }
+	.menu__logout > span {
+		display: none;
+	}
 
-    .menu__chirp-resize {
-        display: flex;
-    }
+	.menu__chirp-resize {
+		display: flex;
+	}
 }

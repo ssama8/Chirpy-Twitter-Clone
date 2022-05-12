@@ -1,10 +1,31 @@
 body {
-  margin: 0;
-  font-family:'Helvetica', 'Courier New', Courier, monospace;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: black;
-  color: white;
-  overflow-y: scroll;
+	margin: 0;
+	font-family: "Helvetica", "Courier New", Courier, monospace;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/* background-color: black; */
+	overflow-y: scroll;
 }
 
+.lightTheme body {
+	background: white;
+	color: black;
+}
+.lightTheme body span {
+	color: black !important;
+}
+.lightTheme body svg {
+	fill: black;
+}
+.lightTheme body a:hover {
+	color: white !important ;
+}
+
+.dimTheme body {
+	background: #555;
+	color: white;
+}
+.darkTheme body {
+	background: black;
+	color: white;
+}
