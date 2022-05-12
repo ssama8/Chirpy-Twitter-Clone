@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./components/Login/Login";
 import SignIn from "./components/Login/SignIn";
@@ -30,21 +29,21 @@ const App = () => {
 		);
 	}
 
-	// if (!state.user && !state.isLogged) {
-	// 	return (
-	// 		<BrowserRouter>
-	// 			<Routes>
-	// 				<Route path='/' element={<Login />}>
-	// 					<Route path='flow/signin' element={<SignIn />} />
-	// 					<Route path='flow/signup' element={<SignUp />} />
-	// 					<Route path='flow/*' element={<Navigate replace to='/' />} />
-	// 				</Route>
-	// 				<Route path='home' element={<Navigate replace to='/' />} />
-	// 				<Route path='*' element={<Navigate replace to='/' />} />
-	// 			</Routes>
-	// 		</BrowserRouter>
-	// 	);
-	// }
+	if (!state.user && !state.isLogged) {
+		return (
+			<BrowserRouter>
+				<Routes>
+					<Route path='/' element={<Login />}>
+						<Route path='flow/signin' element={<SignIn />} />
+						<Route path='flow/signup' element={<SignUp />} />
+						<Route path='flow/*' element={<Navigate replace to='/' />} />
+					</Route>
+					<Route path='home' element={<Navigate replace to='/' />} />
+					<Route path='*' element={<Navigate replace to='/' />} />
+				</Routes>
+			</BrowserRouter>
+		);
+	}
 
 	return (
 		<BrowserRouter>
