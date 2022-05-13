@@ -4,7 +4,6 @@ import MenuActions from "./MenuActions";
 import { PATHS } from "../../constants/menu";
 import styles from "./styles.module.css";
 import Theme from "../Themes/Theme";
-// import { useThemeContext } from "../../context/ThemeContext";
 const Menubar = (props) => {
 	const links = Object.keys(PATHS).map((path) => {
 		let link = path.toLowerCase();
@@ -14,9 +13,6 @@ const Menubar = (props) => {
 		return link;
 	});
 	const { showDropdown, toggleDropdown, checkedTheme, changeTheme } = props;
-
-	// const test = useThemeContext();
-	// console.log(test);
 
 	return (
 		<header className={styles.menu}>
